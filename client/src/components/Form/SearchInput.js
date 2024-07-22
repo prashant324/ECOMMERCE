@@ -10,7 +10,7 @@ const SearchInput = () => {
         e.preventDefault();
         try {
             const { data } = await axios.get(
-                `http://13.51.128.62:8080/api/v1/product/search/${values.keyword}`
+                `http://13.60.163.196:8080/api/v1/product/search/${values.keyword}`
             );
             setValues({ ...values, results: data });
             navigate("/search");

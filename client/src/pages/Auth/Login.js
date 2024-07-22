@@ -17,7 +17,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post("http://13.51.128.62:8080/api/v1/auth/login", {
+            const res = await axios.post("http://13.60.163.196:8080/api/v1/auth/login", {
                 email,
                 password,
             });

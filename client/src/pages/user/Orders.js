@@ -10,7 +10,7 @@ const Orders = () => {
     const [auth, setAuth] = useAuth();
     const getOrders = async () => {
         try {
-            const { data } = await axios.get("http://13.51.128.62:8080/api/v1/auth/orders");
+            const { data } = await axios.get("http://13.60.163.196:8080/api/v1/auth/orders");
             setOrders(data);
         } catch (error) {
             console.log(error);
@@ -62,8 +62,7 @@ const Orders = () => {
                                                         src={`/api/v1/product/product-photo/${p._id}`}
                                                         className="card-img-top"
                                                         alt={p.name}
-                                                        width="100px"
-                                                        height={"100px"}
+                                                        style={{ width: "auto", height: "200px" }}
                                                     />
                                                 </div>
                                                 <div className="col-md-8">

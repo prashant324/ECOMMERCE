@@ -15,7 +15,7 @@ const CategoryProduct = () => {
   const getPrductsByCat = async () => {
     try {
       const { data } = await axios.get(
-        `http://13.51.128.62:8080/api/v1/product/product-category/${params.slug}`
+        `http://13.60.163.196:8080/api/v1/product/product-category/${params.slug}`
       );
       setProducts(data?.products);
       setCategory(data?.category);

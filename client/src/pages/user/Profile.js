@@ -27,7 +27,7 @@ const Profile = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const { data } = await axios.put("http://13.51.128.62:8080/api/v1/auth/profile", {
+            const { data } = await axios.put("http://13.60.163.196:8080/api/v1/auth/profile", {
                 name,
                 email,
                 password,

@@ -7,7 +7,7 @@ export default function useCategory() {
     //get cat
     const getCategories = async () => {
         try {
-            const { data } = await axios.get("http://13.51.128.62:8080/api/v1/category/get-category");
+            const { data } = await axios.get("http://13.60.163.196:8080/api/v1/category/get-category");
             setCategories(data?.category);
         } catch (error) {
             console.log(error);
